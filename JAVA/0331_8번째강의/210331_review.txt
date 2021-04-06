@@ -1,0 +1,45 @@
+2021 - 03 - 31 (Method)
+
+1. 
+/*MethodSample class 생성*/
+//기본자료형 타입 매개변수(x,y)를 가진 method  선언
+//x,y값 출력
+// 참조자료형 타입 매개변수(MyNumber number)를 가진 method선언
+//number안의 x,y값 출력
+--------------------------------------------
+/*MyNumber class 생성*/
+//int x,y선언
+--------------------------------------------
+/*MethodSampleApp class 생성*/
+//기본자료형 타입의 매개변수를 가지는 메소드 호출하기
+//참조자료형 타입의 매개변수를 가지는 메소드 호출하기
+
+2. 오버로딩
+/* MethodOverloadingSample class 생성 */
+//기본자료형 타입 매개변수를 가진 메소드 정의 후 매개변수 값의 덧셈(합) 출력
+//int x, double y
+//double x, int y
+//int x, int y
+//int x,y,z
+//double x, double y
+---------------------------------------------
+/* MethodOverloadingSampleApp class 생성 */
+//MethodOverloadingSample 객체 생성
+//MethodOverloadingSample에서 만들었던 메소드 사용해보기
+
+3. 생성자
+/*User class 생성*/
+//번호, 이름, 아이디, 비밀번호, 이메일, 전화번호, 나이, 주소, 결혼여부 멤버변수 선언
+//생성자 메소드에 위의 멤버변수 값을 초기화하기
+//생성자 메소드 중복정의
+//정보값출력 메소드
+
+/UserApp class 생성*/
+//User1 객체 생성
+//정보값출력메소드 실행
+
+//User2객체 생성
+//기본생성자에 값 추가 후 정보값출력
+
+//User3객체 생성
+//생성자 중복정의 메소드로 매개변수 입력 후 출력
