@@ -1,0 +1,66 @@
+/*인스턴스 내부 클래스*/
+public class Outer{
+   	int x;
+   	static int y;
+
+   	void test1(){...}
+   	static void test2(){...}
+   
+   	//인스턴스 내부 클래스   
+   class Inner {
+      
+      	void test3(){
+         	//외부클래스의 모든 변수, 모든 메소드 사용가능
+         	x,y,test1(),test2() 전부 접근가능
+      	}   
+   }
+}
+
+/*정적 내부 클래스*/
+public class Outer{
+   	int x;
+   	static int y;
+
+   	void test1(){...}
+   	static void test2(){...}
+   	static void test3(){
+      	Inner2만 사용가능
+  	}   
+
+   	//인스턴스 내부 클래스   
+   	class Inner1{
+
+   	}
+
+   	//정적 내부 클래스
+   	static class Inner2{
+      	void test4(){
+         	클래스의 static 멤버만 접근 가능
+      	}
+  	}
+}
+
+/*로컬 내부 클래스*/
+public class Outer{
+   int x;
+   static int y;
+   void test1(){...}
+   static void test2(){...}
+
+   void test3(){
+      int a = 3;
+      int b = 4;
+      final int c = 5;
+
+      b = 7;
+      
+      //로컬 내부 클래스
+      class Inner{
+         void test4(){
+            //외부클래스의 모든 멤버 접근가능
+            //(변경되지 않는 값에만 접근가능)
+            //test3 변수 중에서 값이 변하는 b는 접근불가능
+         }         
+      }
+   }
+}
