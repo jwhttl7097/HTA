@@ -1,0 +1,33 @@
+
+Collection Framework
+ 자바가 자료구조를 구현해 놓은 것
+ 자료구조 - 객체의 저장/삭제/조회 등의 기능을 제공하는 것
+ 자바의 모든 자료구조 구현 클래스는 Collection 인터페이스를 구현한 클래스다.
+
+Collection 인터페이스에 정의된 모든 기능을 구현하고 있다.
+ 자바의 자료구조 특징
+ 객체만 저장할 수 있다.
+ 크기가 가변적이다.
+ 다양한 메소드를 지원한다.
+
+Collection<E>
+ - 모든 자료구조 클래스의 최상위 인터페이스다.
+ - 주요 메소드
+boolean add(E e)
+ 자료구조에 새로운 요소를 추가한다.
+boolean addAll(Collection<? extends E> c)
+ 자료구조에 다른 자료구조의 모든 요소를 추가한다.
+void clear()
+ 자료구조의 모든 요소를 삭제한다.
+boolean contains(Object e)
+ 자료구조에 지정된 객체가 존재하는지 조회한다.
+boolean isEmpty()
+ 자료구조가 비었는지 조회한다.
+Iterator<E> iterator()
+ 자료구조의 각 요소를 반복해서 추출해주는 반복자객체를 반환한다.
+boolean remove(Object e)
+ 자료구조에서 지정된 객체를 삭제한다.
+int size()
+ 자료구조에 저장된 요소의 갯수를 반환한다.
+Object[] toArray()
+ 자료구조에 저장된 요소를 배열로 반환한다.
