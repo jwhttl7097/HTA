@@ -1,0 +1,25 @@
+기본자료형값을 문자열로 변환하기
+정수 -> "문자열"	: String.valueOf(정수)
+	10 -> "10"	String.valueOf(10) -> "10"
+
+실수 -> "문자열"	: String.valueOf(실수)
+	3.14 -> "3.14"	String.valueOf(3.14) -> "3.14"
+
+문자 -> "문자열"	: String.valueOf(문자)
+	'A' -> "A"	String.valueOf('A') -> "A"
+
+불린 -> "문자열"	: String.valueOf(불린)
+	true -> "true"	String.valueOf(true) -> "true"
+
+문자열을 기본자료형 값으로 변환하기
+"문자열" -> 정수
+	Byte.parseByte(문자열) -> byte 타입 값
+	Short.parseByte(문자열) -> short 타입 값
+	Integer.parseByte(문자열) -> int 타입 값
+	Long.parseByte(문자열) -> long 타입 값
+"문자열" -> 실수
+	Float.parseFloat(문자열) -> float 타입 값
+	Double.parseDouble(문자열) -> double 타입 값
+"문자열" -> 불린
+	Boolean.parseBoolean(문자열) -> boolean 타입 값
+
