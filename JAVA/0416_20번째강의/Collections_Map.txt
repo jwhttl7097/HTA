@@ -1,0 +1,32 @@
+<자료구조 란>
+정의 : 자료(Data)의 집합의 의미하며, 각 원소들이 논리적으로 정의된 규칙에 의해 나열되며 자료에 대한 처리를 효율적으로 수행할 수 있도록 자료를 구분하여 표현한 것
+목적 : 자료를 더 효율적으로 저장하고, 관리하기 위해 사용하며, 잘 선택된 자료구조는 실행시간을 단축시켜주거나 메모리 용량의 절약을 이끌어 낼 수 있습니다.
+
+
+Collection<E> 인터페이스
+	* 모든 자료구조 클래스가 반드시 포함해야할 기능이 설계되어 있는 인터페이스
+	*add(E e), contains(Object obj), isEmpty(),
+	 remove(Object obj), clear(), size()
+
+	List<E>
+	* 순서가 유지되는 자료구조 클래스가 반드시 포함해야할 기능이 설계되어 있는 인터페이스
+	* Collection<E> 인터페이스의 추상메소드 상속
+	* add(int index, E e), get(int index), remove(int index), set(int index, E e)
+	* 구현클래스
+		ArrayList<E>, LInkedList<E>, Vector<E>, Stack<E>
+	Set<E>
+	* 중복저장이 허용되지 않는 자료구조 클래스가 반드시 포함해야할 기능이 설계되어 있는 인터페이스
+	* Collection<E> 인터페이스의 추상메소드 상속
+	* 구현클래스
+		HashSet<E>, TreeSet<E>
+	* TreeSet<E>는 Comparable<E>를 구현한 객체에 대해서 오름차순으로 정렬시켜 저장한다.
+
+Map<K, V> 인터페이스
+	* key, value의 쌍으로 데이터를 저장하는 자료구조 클래스가 반드시 포함해야할 기능이 설계되어 있는 인터페이스
+	* key는 중복을 허용하지 않는다.
+	* 구현클래스
+		HashMap<K,V>, HashTable<K, V>, Properties
+		* Properties는 ket와 value가 무조건 String인 Map의 구현 클래스다.
+	* 주요 사용목적
+		* 가변적인 데이터 처리목적
+		* if문을 회피할 목적
