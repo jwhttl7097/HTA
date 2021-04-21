@@ -1,0 +1,26 @@
+		OutputStram
+			void write(int value)
+			void write(byte[] values, int offset, int length)
+		Writer
+			void write(char value)
+			void write(String value)
+
+입출력 데이터의 종류
+	바이트스트림
+		1byte씩 읽고 쓰는 스트림
+		InputStream, OutputStream
+		텍스트, 사진, 영상, 압축파일 등 다양한 데이터의 읽기쓰기가 가능
+	문자스트림
+		1글자씩 일고 쓰는 스트림
+		Reader, Writer
+		오직 텍스트 데이터의 읽기 쓰기만 가능
+보조 스트림
+	다른 스트림과 연결해서 사용하는 스트림
+	스트림의 성능을 향상시키거나 새로운 기능을 추가하는 스트림
+	직접 입출력작업을 처리하지 못하기 때문에 반드시 다른 스트림과 연결해서 사용한다.
+	보조스트림은 생성자를 보면 구분할 수 있다.
+		xxxInputStream(InputStream in)
+		xxxOutputStream(OutputStream out)
+		xxxReader(Reader reader)
+		xxxWriter(Writer writer)
+		* 모든 보조스트림 클래스의 생성자는 다른 스트림을 매개변수로 전달받는다.
