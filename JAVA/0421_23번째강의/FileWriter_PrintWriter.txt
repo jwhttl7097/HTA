@@ -1,0 +1,6 @@
+FileWriter writer = new FileWriter("경로/파일명");
+writer.write("내용");
+writer.close();
+
+PrintWriter pw = new PrintWriter("경로/파일명");
+pw.write("내용");
