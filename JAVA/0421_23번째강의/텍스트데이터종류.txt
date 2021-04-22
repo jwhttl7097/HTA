@@ -1,0 +1,27 @@
+프로그램에서 다루는 텍스트 데이터
+	CSV 텍스트
+		김유신,100,100,100
+		강감찬,80,80,80
+		* 읽기 : BufferedReader - 한 라인씩 읽는 기능 제공
+		* 쓰기 : PrintWriter - 줄바꿈문자 자동추가 기능 제공
+	XML 텍스트
+		<?xml version="1.0" encoding="utf-8"?>
+		<students>
+			<student>
+				<name>김유신</name>
+				<kor>100</kor>
+				<eng>100</eng>
+				<math>100</math>
+			</student>
+			<student>
+				<name>강감찬</name>
+				<kor>80</kor>
+				<eng>80</eng>
+				<math>80</math>
+			</student>
+		</students>
+		* XML 텍스트 데이터를 다루는 별도의 라이브러리가 있다.
+	JSON 텍스트
+		[{"name":"김유신","kor":100, "eng":100, "math":100},
+		 {"name":"강감찬","kor":80, "eng":80, "math":80}]
+		* JSON 텍스트 데이터를 다루는 별도의 라이브러리가 있다.
