@@ -14,12 +14,15 @@ commons-io-2.8.0-bin.zip 파일 다운로드
 
 **Apache commons io 라이브러리 Build Path하기**
 ![image](https://user-images.githubusercontent.com/62005139/115980627-2607ff80-a5c9-11eb-8c39-19600ec9a22c.png)
+
 해당 프로젝트 우측클릭 -> Build Path -> Configure Build Path클릭
 
 ![image](https://user-images.githubusercontent.com/62005139/115980659-62d3f680-a5c9-11eb-9aaf-d6a2435cc9b6.png)
+
 Libraries탭 -> Classpath 클릭 -> Add External JARs 클릭
 
 ![image](https://user-images.githubusercontent.com/62005139/115980702-b1819080-a5c9-11eb-9ca6-35546fc081e7.png)
+
 해당 라이브러리 commons-io-2.8.0.jar 파일 선택 후 열기 -> Apply -> Apply and Close
 
 
