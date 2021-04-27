@@ -4,7 +4,7 @@ oracle 설치하기
   ![오라클설치하기1](https://user-images.githubusercontent.com/62005139/116211576-ed118b80-a77e-11eb-8bda-016389ac228c.PNG)
   
   
-	- Oracle Database 11gR2 Express Edition for Windows x64 다운로드
+	- Oracle Database 11gR2 Express Edition for Windows x64 클릭후 다운로드 진행
   ![오라클설치하기2](https://user-images.githubusercontent.com/62005139/116211498-d703cb00-a77e-11eb-9ab5-222e2382e723.PNG)
   ![오라클설치하기3](https://user-images.githubusercontent.com/62005139/116211756-1df1c080-a77f-11eb-85e7-ce621dfae4ac.PNG)
   
