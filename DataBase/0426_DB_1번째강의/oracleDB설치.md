@@ -32,7 +32,7 @@ oracle 설치하기
 		 Connected.
 		 SQL> alter user hr account unlock;		-- hr계정 활성화
 		 User altered.
-	 	 SQL> alter user hr identified by zxcv1234;	-- hr계정 사용하고자 하는 비밀번호 입력후 ;
+	 	 SQL> alter user hr identified by zxcv1234;	-- hr계정 사용하고자 하는 비밀번호 입력
 		 User altered.
      
    - hr계정 접속 테스트
@@ -44,5 +44,5 @@ oracle 설치하기
 		- hr계정의 테이블들 조회하기
     ![테이블조회](https://user-images.githubusercontent.com/62005139/116213452-c5232780-a780-11eb-859a-306a642c472e.PNG)
 		SQL> select * from tabs;
-    - 테이블 조회결과 7개의 테이블 발견
+		- 테이블 조회결과 7개의 테이블 발견
     ![테이블조회결과](https://user-images.githubusercontent.com/62005139/116213469-c7858180-a780-11eb-87fe-7cfd48b978cc.PNG)
