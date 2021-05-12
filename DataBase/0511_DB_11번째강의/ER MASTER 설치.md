@@ -10,8 +10,10 @@ work with : -> http://ermaster.sourceforge.net/update-site/ 입력
 
 
 next -> accept
+
 ![image](https://user-images.githubusercontent.com/62005139/117902896-71304b00-b309-11eb-9530-329db8896d46.png)
 
 
 install anyaway -> restart
+
 ![image](https://user-images.githubusercontent.com/62005139/117902955-8c9b5600-b309-11eb-9bb9-1f16af4f3510.png)
