@@ -50,4 +50,9 @@ https://github.com/mybatis/mybatis-3/releases
 
 ![image](https://user-images.githubusercontent.com/62005139/119476154-c435e380-bd88-11eb-809b-03976c65b31b.png)
 
-- 셋팅완료 -
+11. src/main/java -> util을 관리하는 패키지를 만들고 패키지안에 MybatisUtils.java 파일을 넣는다.
+
+![image](https://user-images.githubusercontent.com/62005139/119476853-681f8f00-bd89-11eb-8207-1ecf07beb9ea.png)
+
+
+- 셋팅완료 
