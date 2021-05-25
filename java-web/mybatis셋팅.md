@@ -26,6 +26,10 @@ https://github.com/mybatis/mybatis-3/releases
 
 ![image](https://user-images.githubusercontent.com/62005139/119474418-14ac4180-bd87-11eb-84ad-cb1f3b9c0650.png)
 
+ 6-1 src/main/resources폴더 밑에 log4j.properties 파일을 넣어준다
+ 
+ ![image](https://user-images.githubusercontent.com/62005139/119475364-0dd1fe80-bd88-11eb-8bb1-e0113572401c.png)
+
 7. src/main/resources -> new -> Source Folder -> 폴더명 mybatis 생성
 
 ![image](https://user-images.githubusercontent.com/62005139/119474584-458c7680-bd87-11eb-9bc2-f775c593892c.png)
@@ -38,9 +42,9 @@ https://github.com/mybatis/mybatis-3/releases
 
 ![image](https://user-images.githubusercontent.com/62005139/119475258-f2ff8a00-bd87-11eb-913b-71462564fcf9.png)
 
- 8-1 생성된 mybatis.mappers 리소스 폴더에 log4j.properties 파일을 넣어준다
+ 8-1 생성된 mybatis.mappers 리소스 폴더에 mapper.xml 파일을 넣어준다
  
- ![image](https://user-images.githubusercontent.com/62005139/119475364-0dd1fe80-bd88-11eb-8bb1-e0113572401c.png)
+ ![image](https://user-images.githubusercontent.com/62005139/119477904-568ab700-bd8a-11eb-8db5-2cb25db1ee6d.png)
 
 9. src -> main폴더에 resources폴더 생성 -> resources폴더에 log4j.properties 파일을 넣고 mybatis라는 폴더를 하나 더 생성한다.
 
