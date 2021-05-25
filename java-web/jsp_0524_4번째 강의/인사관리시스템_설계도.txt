@@ -1,0 +1,57 @@
+인사관리 시스템 
+http://localhost/sample/hr/main.jsp
+
+sample/hr/main.jsp
+	- 주요 메뉴
+		부서관리
+		사원관리
+		직종관리
+		기타
+부서관리
+	sample/hr/dept/main.jsp
+		- 주요 메뉴
+			부서목록 조회
+			새 부서 등록
+			부서정보 변경
+			부서정보 삭제
+	sample/hr/dept/list.jsp
+		- 전체 부서 목록 제공
+			* 부서명을 클릭하면 detail.jsp의 실행을 요청하기
+	sample/hr/dept/form.jsp
+		- 새 부서 등록 폼 제공
+	sample/hr/dept/add.jsp
+		- 새 부서정보 등록
+	sample/hr/dept/modifyform.jsp
+		- 부서정보 변경 폼 제공
+	sample/hr/dept/modify.jsp
+		- 부서정보 변경
+	sample/hr/dept/remove.jsp
+		- 부서정보 삭제
+	sample/hr/dept/detail.jsp
+		- 해당 부서의 정보 및 부서에 소속된 사원 목록 제공	
+	
+사원관리
+	sample/hr/emp/main.jsp
+		- 주요 메뉴
+			전체 사원 목록
+			사원정보 검색
+			새 사원 등록
+			사원정보 변경
+			사원정보 삭제
+	sample/hr/emp/list.jsp
+		- 전체 사원 목록 제공
+	sample/hr/emp/search.jsp
+		- 사원 정보 검색 결과 제공
+	sample/hr/emp/detail.jsp
+		- 사원 상세정보 제공
+	sample/hr/emp/form.jsp
+		- 새 사원정보 등록 폼 제공
+	sample/hr/emp/add.jsp
+		- 새 사원정보 등록
+	sample/hr/emp/modifyform.jsp
+		- 사원정보 변경 폼 제공
+	sample/hr/emp/modify.jsp
+		- 사원정보 변경
+	sample/hr/emp/remove.jsp
+		- 사원정보 삭제
+
