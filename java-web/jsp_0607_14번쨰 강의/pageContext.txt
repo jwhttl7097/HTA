@@ -1,0 +1,26 @@
+public class PageContext {
+   public ServletRequest getRequest() {
+      return ...
+   }
+   public HttpSession getSession() {
+      return ...
+   }
+}
+
+public interface HttpServletRequest {
+   String getMethod();
+   String getRequestURI();
+   String getProtocol();
+   String getPath();
+   String getContextPath();
+   String getPort();
+   String getRemoteAddr();
+}
+
+
+${pageContext}          ---> PageContext객체 
+${pageContext.request}      ---> 요청객체
+${pageContext.request.method}
+${pageContext.request.contextPath}
+${pageContext.request.remoteAddre}
+${pageContext.session}     ---> 세션객체 

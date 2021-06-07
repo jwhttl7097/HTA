@@ -1,0 +1,29 @@
+페이징처리
+	한 화면당 출력할 데이터 갯수 정하기
+		final int ROWS = 5;
+	요청한 페이지 번호 알아내기
+		int pageNo = Common.stringToNumber(request.getParmeter("page"), 1);
+
+	// 화면에 출력할 데이터 조회하기
+	1. 조회구간 계산하기
+		int beginIndex = (pageNo -1)*ROWS +1;
+		int endIndex = pageNo*ROWS;
+		Map<String, Object> condition = new HashMap<>();
+		condition.put("beginIndex", beginIndex);
+		condition.put("endIndex", endIndex);
+	2. 조회구간에 속하는 데이터 조회하기
+		List<Product> products = productDao.getProducts(condition);
+
+	// 화면에 페이지번호 출력하기
+	1. 총 데이터 갯수 조회하기
+		int totalRows = productDao.getRowsCount();
+	2. 총 페이지 갯수 조회하기
+		int totalPages = (int) Math.ceil((double) totalRows/ROWS);
+	3. 총 페이지 갯수만큼 페이지번호 출력하기
+		<%
+		  for (int num=1; num<totalPages; num++) {
+		%>
+			<a href="list.jsp?page=<%=num %>"><%=num %></a>
+		<%
+		  }
+		%>

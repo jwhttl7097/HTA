@@ -1,0 +1,21 @@
+리뷰 카운트
+1. Product.java에
+	int reviewCnt; 변수를 추가하고, Getter/Setter 메소드를 추가한다.
+2. products.xml의 매핑된 sql구문중에서
+	<select/>, <update>구문에 product_review_cnt관련 내용추가
+3. productDao.java는 변경내용 없음
+
+4.insertreview.jsp에서
+	reviewDao.insertReview(review); // 리뷰등록
+	
+	- 상품번호에 해당하는 상품정보를 조회한다. ProductDao객체의 getProductByNo(상품번호) 사용
+	- 상품정보의 reviewCnt를 1증가시킨다.
+	- 리뷰카운트가 변경된 상품정보로 데이터베이스의 내용을 업데이트한다. updateProduct(상품정보) 사용
+
+5. deletereview.jsp에서
+	reviewDao.deleteReview(review); // 리뷰삭제
+
+	- 상품번호에 해당하는 상품정보를 조회한다.
+	- 상품정보의 reviewCnt를 1감소시킨다.
+	- 리뷰카운트가 변경된 상품정보로 데이터베이스의 내용을 업데이트한다.
+	

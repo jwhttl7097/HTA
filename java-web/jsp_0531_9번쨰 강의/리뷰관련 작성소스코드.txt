@@ -1,0 +1,43 @@
+리뷰관련 소스
+1. com.sample.vo에 Review.java 추가
+2. com.sample.dao에 ReviewDao.java 추가
+
+3. src/main/resources/mybatis/mappers/reviews.xml 추가
+4. src/main/resources/mybatis/mybatis-config.xml의 <mappers> 태그안에
+   reviews.xml 추가
+
+5. product/insertreview.jsp와 product/deletereview.jsp를 추가한다.
+
+
+Review는 sample_product_reviews 테이블의 컬럼을 참고해서 작성
+ReviewDao는 
+	public void insertReview(Review review) { ... }
+	public List<Review> getReviewsByProductNo(int productNo) { ... }
+	public void deleteReview(int reviewNo) { ... }
+reviews.xml에는
+	<insert id="insertReview" parameterType="com.sample.vo.Review">
+	
+	</insert>
+	<select id="getReviewsByProductNo" parameterType="int"
+					resultType="com.sample.vo.Review">
+	</select>
+	<delete id="deleteReview" parameterType="int">
+
+	</delete>
+
+product/insertreview.jsp에서는
+	상품번호, 페이지번호, 리뷰제목, 리뷰내용을 조회한다.
+	세션에서 로그인한 사용자정보를 조회한다.
+	사용자정보가 null이면 로그인페이지를 재요청하게 한다.
+	사용자정보에서 사용자 아이디를 조회한다.
+	Review객체를 생성해서 조회된 리뷰정보를 저장한다.
+	ReviewDao객체를 획득한다.
+	ReviewDao객체의 insertReview(리뷰정보)를 실행해서 데이터베이스에 저장한다.
+	detail.jsp?no=상품번호&page=페이지번호를 재요청URL로 보낸다.
+product/detail.jsp에서는
+	loginedUser가 null이 아니면 리뷰입력폼을 출력한다.
+	ReviewDao객체를 획득한다.
+	ReviewDao객체의 getReivewsByProductNo(상품번호)를 실행해서 리뷰목록을 조회한다.
+	조회된 리뷰목록을 출력한다.
+	(loginedUser가 null이 아니고 loginedUser의 사용자아이디와 리뷰의 사용자아이디가
+	동일한 경우 삭제버튼을 출력한다.)

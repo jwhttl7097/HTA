@@ -1,0 +1,38 @@
+한 페이지에 표시할 데이터 갯수
+   int rows = 20;
+
+// 페이지 번호에 해당하는 데이터 조회해서 출력하기
+   요청한 페이지 번호
+   int pageNo = Integer.parseInt(request.getParameter("page"));
+   조회시작번호
+   int beginIndex = (pageNo - 1)*rows + 1;
+   조회종료번호
+   int endIndex = pageNo*rows;
+
+   <select id="getProducts" parameterType="com.sample.vo.Criteria" resultType="com.sample.vo.Product">
+      select *
+      from (select row_number() over (order by employee_id asc) no, A.*
+         from employees A)
+      where no between #{beginIndex} and #{endIndex}
+   </select>
+
+// 페이지 번호 출력하기
+   전체 데이터갯수
+      int totalRows = 1099;
+   
+   전체 페이지 갯수
+      int totalPages = (int) Math.ceil((double)totalRows/row);
+   <%
+      for(int num=1; num<=totalPages; num++){
+   %>
+         <a href="list.jsp?page=<%=num %>"><%=num %></a>
+   <%
+      }
+   %>
+
+public class Criteria{
+   private int beginIndex;
+   private int endIndex;
+   private String searchOpt;
+   private String searchKeyword;
+}

@@ -1,0 +1,10 @@
+자바의 데이터베이스 엑세스 기술
+- JDBC
+- SQL Mapper Framework
+   * ibatis
+   * mybatis
+   * 객체 - SQL 매핑
+- ORM(Object Relation Mapping)
+   * JPA
+   * hibernate
+   * 객체 - Table 매핑
