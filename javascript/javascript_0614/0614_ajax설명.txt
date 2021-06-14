@@ -1,0 +1,49 @@
+동기식 실행
+* 프로그램이 순서대로 실행된다.
+* 수행문의 실행이 완료되면 다음 수행문이 실행된다.
+* 이전 수행문의 실행이 완료되기 전에 다른 수행문을 실행할 수 없다.
+var fileData = fileRead("a.txt");
+console.log(fileData);
+
+var userData = dbRead("select * from employees");
+console.log(userData);
+
+비동기식 실행
+* callback : 특정시점에 실행되는 함수
+* 함수를 호출할 때, 그함수의 작업이 완료되면 실행될
+  콜백함수(함수의 작업이 완료된 후 실행할 코드가 포함되어 있다.)를 전달한다.
+* 콜백함수는 특정 시점이 되었을 때 운영체제, 브라우져, 웹서버 등이 알아서 실행하는 함수다.
+	콜백함수가 실행되는 시점
+		- 사용자와 상호작용으로 이벤트 발생시
+		- 서버로부터 응답데이터를 받았을 때
+		- 클라이언트의 요청이 접수되었을 때
+* 콜백함수는 실행 시점을 예측할 수 없다.
+* 함수 호출시 절달된 콜백함수들은 함수 호출 순서와 상관없이 샐행될 수 있다.
+* 비동기식 실행은 이전에 호출된 함수의 작업완료 여부와 상관없이 다음번 함수를 호출할 수 있다.
+
+var userData = dbRead();
+console.log(userData);
+
+비동기식 실행
+function fileRead(path, callback) {
+	// 파일 읽기
+	var file = new File(path);
+	var data = "";
+	
+	var line = null;
+	whtil(line = file.read()) {
+		data += line;
+	}
+
+	// 파일읽기가 완료되면 callback 함수 실행
+	callback(data);
+}
+
+fileRead("a.txt", function(fileData) { console.log(fileData) });
+
+dbRead(function(data) {
+	console.log(data)
+})
+
+dbRead(function(data)
+

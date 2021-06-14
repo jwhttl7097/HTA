@@ -1,0 +1,33 @@
+<c:forEach var="item" items="${skills}" varStatus="loop">
+   <input id="skill-${loop.count}" />
+   <label onclick="checkSkill('skill-${loop.count}')">${item.name}
+</c:forEach>
+
+<c:forEach var="cart" items="${cartList}">
+<tr id="row-${cart.no}">
+   <td>${cart.no}</td>
+   <td>${cart.productName}</td>
+   <td>${cart.productPrice}</td>
+   <td>${cart.amount}</td>
+   <td><button onclick="deleteRow('row-${cart.no}')">삭제</button></td>
+</tr>
+</c:forEach>
+
+<tr id="row-100">
+   <td>${cart.no}</td>
+   <td>${cart.productName}</td>
+   <td>${cart.productPrice}</td>
+   <td>${cart.amount}</td>
+   <td><button onclick="deleteRow('row-100')">삭제</button></td>
+</tr>
+<tr id="row-102">
+   <td>${cart.no}</td>
+   <td>${cart.productName}</td>
+   <td>${cart.productPrice}</td>
+   <td>${cart.amount}</td>
+   <td><button onclick="deleteRow('row-102')">삭제</button></td>
+</tr>
+
+function deleteRow(rowId) {
+   document.getElementById(rowId).remove();
+}
