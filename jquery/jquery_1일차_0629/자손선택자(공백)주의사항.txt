@@ -1,0 +1,4 @@
+ - 자손 선택자(공백) 주의할것
+$('div.box') div중에서 class에 box를 포함하고 있는것
+$('div .box') div의 자손중에서 class에 box를 포함하고 있는것
+$('div > .box') div의 자식중에서 class에 box를 포함하고 있는것
