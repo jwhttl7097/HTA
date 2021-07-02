@@ -1,0 +1,4 @@
+<button class="btn btn-warning btn-sm" data-item-no="10001">삭제</button>
+ --> data-item-no="10001"은 data-로 시작하기 떄문에 삭제 버튼을 누르면 10001을 읽어올수 있다.
+ --> 다른 엘리먼트 또는 태그에 방해되지 않는다.
+ --> jQuery에서 .data(item-no)을 사용하면 10001을 획득할 수 있다.

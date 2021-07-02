@@ -1,0 +1,12 @@
+$("#table-cart-items :checkbox")
+ 아이디가 table-cart-items인 자손중에 체크박스인 엘리먼트를 선택
+$("#btn-remove-all-row")
+$("#table-cart-items tbody")
+$("#checkbox-all-selected")
+$("#btn-remove-checked-row")
+$("#table-cart-items tbody tr:has(:checked)")
+$("#table-cart-items tbody :checkbox")
+$("#table-cart-items tbody .btn-warning")
+$("#row-" + itemNo)
+$("#table-cart-items tbody :checkbox:checked")
+		
