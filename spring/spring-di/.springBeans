@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.13.202006180736-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/context-di-demo1.xml</config>
+		<config>src/main/resources/context-di-demo2.xml</config>
+		<config>src/main/resources/context-di-demo3.xml</config>
+		<config>src/main/resources/context-di-demo4.xml</config>
+		<config>src/main/resources/context-di-demo5.xml</config>
+		<config>src/main/resources/context-di-demo6.xml</config>
+		<config>src/main/resources/context-di-demo7.xml</config>
+		<config>src/main/resources/context-di-demo8.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
