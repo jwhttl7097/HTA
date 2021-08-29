@@ -1,0 +1,26 @@
+요구 사항
+	회원가입 서비스 요구사항
+		- 신규 사용자 정보를 데이터베이스에 저장한다.							- INSERT
+		- 신규 가입한 사용자는 적립포인트를 100지급한다.						- UPDATE
+		  * 동일한 아이디를 가진 사용자는 저장할 수 없고, 예외를 발생시킨다.		- SELECT
+		  * 동일한 이메일을 가진 사용자는 저장할 수 없고, 예외를 발생시킨다.		- SELECT
+		  * 동일한 전화번호를 가진 사용자는 저장할 수 없고, 예외를 발생시킨다.		- SELECT
+		  
+개발 내용
+	com.sample.vo에 User 클래스 작성하기
+	
+	com.sample.dao에 UserMapper 인터페이스 작성하기
+		- 새 사용자 정보를 전달받아서 저장하기
+		- 변경된 사용자 정보를 전달받아서 반영하기
+		- 아이디로 사용자 정보를 조회해서 반환하기
+		- 이메일로 사용자 정보를 조회해서 반환하기
+		- 전화번호로 사용자 정보를 조회해서 반환하기
+	
+	src/main/resources/mybatis/mappers에 users.xml 매퍼파일 작성하기
+	
+	com.sample.service에 UserService 클래스 작성하기
+		- 사용자 정보를 전달받아서 회원가입 시키기
+	
+	com.sample.exception에 사용자정의 RuntimeException 클래스 작성하기
+		- SampleMallException
+	
